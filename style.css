@@ -3,16 +3,38 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
     overflow: auto;
     background-color: black;
+    color: white;
     font-family: "Be Vietnam Pro", sans-serif;
 }
 
+.container {
+    display: grid;
+    grid-template-areas: 
+        "aside nav"
+        "aside main"
+        "footer footer";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 3fr;
+    margin: 0;
+    height: 100vh; /* Ocupa 100% da altura da viewport */
+}
+
+.nav {
+    grid-area: nav;
+    background-color: black;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    margin-left: 20rem;
+}
+
 .btn-custom {
-    background-color: rgb(51, 53, 51);
+    background-color: rgb(129, 127, 131);
     color: rgb(242, 236, 221);
     border: none; 
+    margin: 1em;
 }
 
 .btn-custom:hover {
@@ -20,196 +42,47 @@ body {
     color: rgb(255, 255, 255); 
 }
 
-form {
-    margin-left: 19rem;
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
+
+.aside {
+    grid-area: aside;
+    background-color: #f4f4f4;
+    padding: 1rem;
+    margin-left: -4rem;
 }
 
-aside {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 250px);
-    grid-template-areas: 
-    "banner"
-    "contato-info"
-    "conecte";
-    width: 20rem;
-    height: 50rem;
-    margin-top: -4rem;
-    position: fixed;
-    background-color: #333533;
-    border-radius: 30px;
+.main {
+    grid-area: main;
+    padding: 1rem;
 }
 
-
-.banner {
-    padding: 10px 15px;
-    display: block;
+.footer {
+    grid-area: footer;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    margin-left: -1rem;
+    text-align: center;
+    width: 85.6rem;
 }
 
-.banner img{
-    width: 18rem;
-    height: 18rem;
-    margin-top: 1rem;
-    filter: drop-shadow(0 0 1rem rgb(10, 9, 9));
-}
+/* Responsividade */
+@media (max-width: 708px) {
 
-.banner h1 {
-    color: #ffff;
-    font-size: 30px;
-    margin-left: 1rem;
-    margin-top: -2rem;
-}
-
-.button-CV {
-    margin-left: 3rem;
-}
-
-.banner .button-CV .btn-custom {
-    background-color: black;
-    font-weight: 600;
-    font-size: 15px;
-    --bs-btn-padding-y: 0.7rem;
-    --bs-btn-padding-x: 2rem;
-    border-radius: 15px;
-}
-
-
-.button-CV .btn-custom:hover {
-    background-color: white; 
-    color: black; 
-}
-
-.contato-info {
-    padding: 5px 5px 5px 5px;
-}
-
-
-.contato-info img {
-    width: 3rem;
-    height: 3rem;
-}
-
-.contato-info h1 {
-    font-size: 1rem;
-    margin-left: 4rem;
-    margin-top: -3rem;
-    color: white;
-}
-
-.contato-info p {
-    font-size: 0.7rem;
-    color: white;
-    margin-left: 4rem;
-}
-
-
-.hr-aside {
-    color: #f2ecdd;
-    display: block;
-}
-
-
-.conecte_se .btn-custom{
-    background-color: black;
-    margin-left: 1.5rem;
-    --bs-btn-padding-y: 0.5rem;
-    --bs-btn-padding-x: 2rem;
-    border-radius: 15px;
-}
-
-
-.conecte_se .btn-custom:hover {
-    background-color: white; 
-    color: black; 
-    font-weight: bold;
-}
-
-
-.redes_sociais img {
-    width: 3rem;
-    height: 3rem;
-    margin-left: 1rem;
-}
-    
-@media (max-width: 768px) {
-    aside {
-        display: grid;
-        grid-template-columns: 1, 1fr; 
-        grid-template-rows: 1px;
-        grid-template-areas: 
-        "banner banner banner"
-        "banner banner banner";
-        width: 100%; 
-        height: 40rem;
-        margin-top: 0; 
-        position: relative; 
-        border-radius: 0; 
-        padding: 1rem; 
-    }
-
-    .navbar-toggler{
-        background-color: rgb(133, 134, 134);
-    }
-
-    .contato-info,
-    .conecte_se {
-        display: none; 
-    }
-
-    .banner {
-        display: block;
-    }
-
-    .hr-aside {
+    .nav {
         display: none;
     }
-
-    .banner img{
-        width: 18rem;
-        height: 18rem;
-        margin-top: 1rem;
-        margin-left: 2.5rem;
-        filter: drop-shadow(0 0 1rem rgb(10, 9, 9));
-    }
-    
-    .banner h1 {
-        color: #ffff;
-        font-size: 35px;
-        margin-left: 2rem;
-        margin-top: -2rem;
-    }
-    
-    .button-CV {
-        margin-left: 6rem;
-        margin-top: 1rem;
+    .container {
+        grid-template-areas:
+            "nav"
+            "aside"
+            "main"
+            "footer";
+        grid-template-columns: 5fr;
+        grid-template-rows: 100px 400px 500px 100px;
+        height: 20rem;
     }
 
-    .banner {
-        margin-top: -1.5rem;
-    }
-
-    aside {
-        height: 26rem;
-    }
-
-    .button {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-
-    form, a , .btn{
-        --bs-btn-padding-y: 0.5rem;
-        --bs-btn-padding-x: 1rem;
-        border-radius: 15px;
-        margin: auto;
-        
-
-           
+    .footer {
+        width: 27.1rem;
     }
 }
-        
-    
-
