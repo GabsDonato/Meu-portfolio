@@ -44,10 +44,103 @@ body {
 
 .aside {
     grid-area: aside;
-    background-color: #f4f4f4;
     padding: 1rem;
     margin-left: -1rem;
+    background-color: #333533;
+    border-radius: 30px;
+    height: 55rem;
 }
+
+.banner {
+    padding: 10px 15px;
+    display: block;
+}
+
+.banner img{
+    width: 18rem;
+    height: 18rem;
+    margin-top: 1rem;
+    filter: drop-shadow(0 0 1rem rgb(10, 9, 9));
+}
+
+.banner h1 {
+    color: #ffff;
+    font-size: 30px;
+    margin-left: 1rem;
+    margin-top: -2rem;
+}
+
+.button-CV {
+    margin-left: 3rem;
+}
+
+.banner .button-CV .btn-custom {
+    background-color: black;
+    font-weight: 600;
+    font-size: 15px;
+    --bs-btn-padding-y: 0.7rem;
+    --bs-btn-padding-x: 2rem;
+    border-radius: 15px;
+}
+
+
+.button-CV .btn-custom:hover {
+    background-color: white; 
+    color: black; 
+}
+
+.contato-info {
+    padding: 5px 5px 5px 5px;
+}
+
+
+.contato-info img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.contato-info h1 {
+    font-size: 1rem;
+    margin-left: 4rem;
+    margin-top: -3rem;
+    color: white;
+}
+
+.contato-info p {
+    font-size: 0.7rem;
+    color: white;
+    margin-left: 4rem;
+}
+
+
+.hr-aside {
+    color: #f2ecdd;
+    display: block;
+}
+
+
+.conecte_se .btn-custom{
+    background-color: black;
+    margin-left: 1.5rem;
+    --bs-btn-padding-y: 0.5rem;
+    --bs-btn-padding-x: 2rem;
+    border-radius: 15px;
+}
+
+
+.conecte_se .btn-custom:hover {
+    background-color: white; 
+    color: black; 
+    font-weight: bold;
+}
+
+
+.redes_sociais img {
+    width: 3rem;
+    height: 3rem;
+    margin-left: 1rem;
+}
+
 
 .main {
     grid-area: main;
@@ -61,7 +154,8 @@ body {
     padding: 1rem;
     margin-left: -1rem;
     text-align: center;
-    width: 85.6rem;
+    margin-top: 46rem;
+    width: 84.5rem;
 }
 
 /* Responsividade */
