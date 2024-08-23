@@ -22,6 +22,9 @@ body {
 
 form {
     margin-left: 19rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
 }
 
 aside {
@@ -153,7 +156,7 @@ aside {
 
     .contato-info,
     .conecte_se {
-        display: none; /
+        display: none; 
     }
 
     .banner {
@@ -191,4 +194,15 @@ aside {
     aside {
         height: 26rem;
     }
+
+    .button-nav {
+        margin: 1rem 1rem 1rem 3rem;
+    }
+
+    form {
+        gap: 1rem;
+    }
 }
+        
+    
+
