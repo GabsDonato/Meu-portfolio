@@ -43,6 +43,7 @@ aside {
 
 .banner {
     padding: 10px 15px;
+    display: block;
 }
 
 .banner img{
@@ -102,8 +103,9 @@ aside {
 }
 
 
-hr {
+.hr-aside {
     color: #f2ecdd;
+    display: block;
 }
 
 
@@ -147,5 +149,46 @@ hr {
 
     .navbar-toggler{
         background-color: rgb(133, 134, 134);
+    }
+
+    .contato-info,
+    .conecte_se {
+        display: none; /
+    }
+
+    .banner {
+        display: block;
+    }
+
+    .hr-aside {
+        display: none;
+    }
+
+    .banner img{
+        width: 18rem;
+        height: 18rem;
+        margin-top: 1rem;
+        margin-left: 2.5rem;
+        filter: drop-shadow(0 0 1rem rgb(10, 9, 9));
+    }
+    
+    .banner h1 {
+        color: #ffff;
+        font-size: 35px;
+        margin-left: 2rem;
+        margin-top: -2rem;
+    }
+    
+    .button-CV {
+        margin-left: 6rem;
+        margin-top: 1rem;
+    }
+
+    .banner {
+        margin-top: -1.5rem;
+    }
+
+    aside {
+        height: 26rem;
     }
 }
