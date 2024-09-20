@@ -60,12 +60,37 @@ body {
 
 .main h1 {
     font-family: "Be Vietnam Pro";
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 2rem 0;
     text-align: center;
     padding: 3rem;
     font-weight: lighter;
+    letter-spacing: 0.15em;
+    border-right: 0.2rem solid #333; 
+    white-space: nowrap;
+    overflow: hidden; 
+    width: 100%; 
+    animation: typing 4s steps(10, end), blink-caret 0.75s step-end infinite;
 }
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #333;
+    }
+}
+
 
 .card {
     background-color: #333;
@@ -84,9 +109,14 @@ body {
     padding: 1rem;
 }
 
+.card-body, h5 {
+    margin-top: 1rem;
+}
+
 .card-body , p {
     line-height: 2rem;
-    margin-top: -1rem;
+    margin-top: -2rem;
+    letter-spacing: 0.1rem;
 }
 
 .card-body .btn{
@@ -118,9 +148,50 @@ body {
 }
 
 .redes_sociais {
-    margin-top: 12rem;
+    margin-top: 16rem;
     display: flex;
     justify-content: center;
+}
+
+.SobreMim , h2 {
+    font-family: "Be Vietnam Pro";
+    font-size: 2.5rem;
+    font-weight: lighter;
+    margin-top: 1.5rem;
+    margin-left: -4rem;
+}
+
+.profile-container {
+    position: relative; 
+    display: inline-block; 
+}
+
+.img-fluid {
+    width: 100%; 
+    height: auto;
+}
+
+.profile-container p {
+    font-size: 1rem;
+    font-weight: bolder;
+    text-align: justify;
+    position: absolute; 
+    top: 4rem; 
+    color: white;    
+}
+
+.Skills {
+    display: flex;
+    margin-top: 2rem; /* Adicione este espaçamento */
+}
+
+.Skills, h3 {
+    font-size: 2rem;
+}
+
+.Skills, li {
+    font-size: 1rem;
+    margin: 0.3rem 0;
 }
 
 
