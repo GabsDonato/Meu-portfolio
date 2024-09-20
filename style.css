@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    overflow: auto;
+    overflow: auto; 
     background-color: black;
     font-family: "Be Vietnam Pro", sans-serif;
 }
@@ -11,13 +11,16 @@ body {
 .container {
     display: grid;
     grid-template-areas: 
-        "aside nav"
-        "aside main"
-        "footer footer";
+        "nav"
+        "main"
+        "footer";
     grid-template-rows: auto 1fr auto;
-    grid-template-columns: 1fr 3fr;
-    margin: 0;
     height: 100vh; 
+}
+
+.logotipoNav {
+    height: 50px; 
+    margin-right: auto; 
 }
 
 .nav {
@@ -26,7 +29,10 @@ body {
     color: #fff;
     padding: 1rem;
     text-align: center;
-    margin-left: 20rem;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    height: 80px;
 }
 
 .btn-custom {
@@ -34,6 +40,7 @@ body {
     color: rgb(242, 236, 221);
     border: none; 
     margin: 1em;
+    cursor: pointer; 
 }
 
 .btn-custom:hover {
@@ -41,142 +48,119 @@ body {
     color: rgb(255, 255, 255); 
 }
 
-
-.aside {
-    grid-area: aside;
-    padding: 1rem;
-    margin-left: -1rem;
-    background-color: #333533;
-    border-radius: 30px;
-    height: 55rem;
-}
-
-.banner {
-    padding: 10px 15px;
-    display: block;
-}
-
-.banner img{
-    width: 18rem;
-    height: 18rem;
-    margin-top: 1rem;
-    filter: drop-shadow(0 0 1rem rgb(10, 9, 9));
-}
-
-.banner h1 {
-    color: #ffff;
-    font-size: 30px;
-    margin-left: 1rem;
-    margin-top: -2rem;
-}
-
-.button-CV {
-    margin-left: 3rem;
-}
-
-.banner .button-CV .btn-custom {
-    background-color: black;
-    font-weight: 600;
-    font-size: 15px;
-    --bs-btn-padding-y: 0.7rem;
-    --bs-btn-padding-x: 2rem;
-    border-radius: 15px;
-}
-
-
-.button-CV .btn-custom:hover {
-    background-color: white; 
-    color: black; 
-}
-
-.contato-info {
-    padding: 5px 5px 5px 5px;
-}
-
-
-.contato-info img {
-    width: 3rem;
-    height: 3rem;
-}
-
-.contato-info h1 {
-    font-size: 1rem;
-    margin-left: 4rem;
-    margin-top: -3rem;
-    color: white;
-}
-
-.contato-info p {
-    font-size: 0.7rem;
-    color: white;
-    margin-left: 4rem;
-}
-
-
-.hr-aside {
-    color: #f2ecdd;
-    display: block;
-}
-
-
-.conecte_se .btn-custom{
-    background-color: black;
-    margin-left: 1.5rem;
-    --bs-btn-padding-y: 0.5rem;
-    --bs-btn-padding-x: 2rem;
-    border-radius: 15px;
-}
-
-
-.conecte_se .btn-custom:hover {
-    background-color: white; 
-    color: black; 
-    font-weight: bold;
-}
-
-
-.redes_sociais img {
-    width: 3rem;
-    height: 3rem;
-    margin-left: 1rem;
-}
-
-
 .main {
     grid-area: main;
     padding: 1rem;
+    color: white; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
 }
+
+.main h1 {
+    font-family: "Be Vietnam Pro";
+    font-size: 3rem;
+    margin: 2rem 0;
+    text-align: center;
+    padding: 3rem;
+    font-weight: lighter;
+}
+
+.card {
+    background-color: #333;
+    width: 100%; 
+    max-width: 60rem; 
+    height: auto; 
+    margin: 1rem 0; 
+    padding: 1rem; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+.card-body, h5, p {
+    color: white;
+    height: 5rem;
+    padding: 1rem;
+}
+
+.card-body , p {
+    line-height: 2rem;
+    margin-top: -1rem;
+}
+
+.card-body .btn{
+    margin: 1rem;
+    background-color: black;
+    text-align: center;
+}
+
+.btn-custom {
+    background-color: rgb(129, 127, 131);
+    color: rgb(242, 236, 221);
+    border: none; 
+    padding: 0.5rem 1rem; 
+    cursor: pointer; 
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+    position: relative; 
+}
+
+.btn-custom:hover {
+    background-color: rgb(70, 72, 70); 
+    color: rgb(255, 255, 255); 
+    transform: scale(1.1); 
+}
+
+.redes_sociais img {
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem;
+}
+
+.redes_sociais {
+    margin-top: 12rem;
+    display: flex;
+    justify-content: center;
+}
+
 
 .footer {
     grid-area: footer;
     background-color: #333;
     color: #fff;
     padding: 1rem;
-    margin-left: -1rem;
     text-align: center;
-    margin-top: 46rem;
-    width: 84.5rem;
 }
 
-/* Responsividade */
-@media (max-width: 708px) {
 
-    .nav {
-        display: none;
-    }
+@media (max-width: 708px) {
     .container {
         grid-template-areas:
             "nav"
-            "aside"
             "main"
             "footer";
-        grid-template-columns: 5fr;
-        grid-template-rows: 100px 400px 500px 100px;
-        height: 20rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        height: auto; 
+    }
+
+    .nav {
+        text-align: left; 
+        padding: 1rem 1rem; 
+    }
+    .main h1 {
+        font-size: 2rem; 
+    }
+
+    .card {
+        width: 90%; 
+    }
+
+    .card-body .btn {
+        margin: 1rem 0; 
     }
 
     .footer {
-        width: 27.1rem;
-        
+        padding: 1rem; 
     }
 }
