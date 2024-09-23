@@ -1,23 +1,12 @@
-# Meu Portfólio 
+  # Bem-vindo(a) ao meu projeto pessoal 🏆 
+  ## Descrição
 
-### Bem-vindo ao repositório do meu portfólio! Este projeto foi criado usando o Figma e está disponível em versões para dispositivos móveis e web. O portfólio é projetado para apresentar minhas informações profissionais e projetos de forma clara e acessível.
+Este projeto tem como objetivo a construção do meu portfólio que exibe minhas habilidades e trabalhos anteriores de forma eficaz em dispositivos móveis e web.
 
-## Estrutura do Projeto 📁
+![Desktop - 1](https://github.com/user-attachments/assets/59eab30b-6e58-4e15-b3a2-24dcb63005a0)
 
-O portfólio é composto por três abas principais:
 
-1. **Sobre Mim**: Uma seção que apresenta uma visão geral sobre minha trajetória profissional, habilidades e formação.
-2. **Experiências**: Detalha minhas experiências de trabalho anteriores, destacando as funções e responsabilidades que desempenhei.
-3. **Projetos**: Uma vitrine dos projetos em que trabalhei, com descrições e detalhes relevantes para mostrar meu trabalho.
-
-## Versões 💻
-
-O design foi otimizado para duas plataformas principais:
-
-- **Versão Web**: Adaptado para ser visualizado em navegadores de desktop e tablets.
-- **Versão Mobile**: Projetado para garantir uma boa experiência em dispositivos móveis, como smartphones.
-
-## Tecnologias 🔧
+## Tecnologias Utilizadas
 
 Foi criado utilizando as seguintes tecnologias e ferramentas:
 
@@ -25,10 +14,22 @@ Foi criado utilizando as seguintes tecnologias e ferramentas:
 - **HTML/CSS**: Para a estrutura e estilos das páginas (se aplicável, dependendo de como você planeja implementar o design).
 - **JavaScript**: Para interatividade e funcionalidades adicionais.
 
-## Contato 📞
+## Funcionalidades
 
-Se você tiver alguma dúvida ou quiser entrar em contato, você pode me encontrar em:
+- Layout responsivo adaptado para dispositivos móveis.
+- Exibição de projetos e habilidades de forma clara e atraente.
+- Navegação intuitiva e design moderno.
 
+
+## Estrutura do Projeto 
+
+O portfólio é composto por três abas principais:
+
+- **Sobre Mim**: Uma seção que apresenta uma visão geral sobre minha trajetória profissional, habilidades e formação.
+- **Experiências**: Detalha minhas experiências de trabalho anteriores, destacando as funções e responsabilidades que desempenhei.
+- **Projetos**: Uma vitrine dos projetos em que trabalhei, com descrições e detalhes relevantes para mostrar meu trabalho.
+
+### Contato
 - **Email**: gabrieladonato.souza@gmail.com
 - **LinkedIn**: [Gabriela Donato]([https://www.linkedin.com/in/seu-perfil](https://www.linkedin.com/in/gabriela-donato-8034361ab/))
 
