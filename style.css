@@ -182,16 +182,22 @@ body {
 
 .Skills {
     display: flex;
-    margin-top: 2rem; /* Adicione este espaçamento */
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2rem; 
 }
 
 .Skills, h3 {
     font-size: 2rem;
+    color: white;
 }
+
+
 
 .Skills, li {
     font-size: 1rem;
     margin: 0.3rem 0;
+    list-style: circle;
 }
 
 
