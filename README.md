@@ -3,9 +3,6 @@
 
 Este projeto tem como objetivo a construção do meu portfólio que exibe minhas habilidades e trabalhos anteriores de forma eficaz em dispositivos móveis e web.
 
-![Desktop - 1](https://github.com/user-attachments/assets/59eab30b-6e58-4e15-b3a2-24dcb63005a0)
-
-
 ## Tecnologias Utilizadas
 
 Foi criado utilizando as seguintes tecnologias e ferramentas:
