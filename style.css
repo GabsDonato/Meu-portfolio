@@ -200,7 +200,7 @@ body {
 }
 
 
-.stefanini, h2 {
+.experiencias h2 {
     font-family: "Be Vietnam Pro";
     font-size: 2.5rem;
     font-weight: lighter;
@@ -215,10 +215,22 @@ body {
    text-align: left;
 }
 
-h4 {
+.stefanini  h4 {
     color: rgb(146, 119, 153);
     font-size: 1rem;
     margin-left: 1rem;
+}
+
+.Cine  h4 {
+    color: rgb(146, 119, 153);
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.dellaVolpe  h4 {
+    color: rgb(146, 119, 153);
+    font-size: 1rem;
+    text-align: right;
 }
 
 .stefanini p {
@@ -246,7 +258,7 @@ h4 {
 }
 
 
-.dellaVolpe, p {
+.dellaVolpe p {
     margin-top: 1rem;
     text-align: right;
     font-size: 1rem;
@@ -275,6 +287,18 @@ h4 {
     
 }
 
+
+.Projetos{
+    margin-top: 6rem;
+}
+
+.Text-Principal {
+    text-align: right;
+    font-family: "Be Vietnam Pro";
+    font-size: 2.5rem;
+    font-weight: lighter;
+    
+}
 
 .footer {
     grid-area: footer;
