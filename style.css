@@ -302,7 +302,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     position: absolute;
     bottom: -155rem;
     left: 0;
