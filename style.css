@@ -295,20 +295,6 @@ body {
     
 }
 
-.footer {
-    grid-area: footer;
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    position: absolute;
-    bottom: -155rem;
-    left: 0;
-    padding: 20px;
-    z-index: 1;
-}
 
 
 @media (max-width: 930px) {
@@ -338,9 +324,6 @@ body {
         margin: 1rem 0; 
     }
 
-    .footer {
-        display: none; 
-    }
 }
 
 
